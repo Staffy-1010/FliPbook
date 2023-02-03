@@ -23,7 +23,9 @@
           zIndex++;
           imgset.classList.remove("revert-pages");
           imgset.setAttribute("style", "z-index:" + zIndex);
-          imgset.classList.add("pages");
+          var time = setTimeout(() => {
+            imgset.classList.add("pages");
+          }, 200);
         }
       }
     </script>
